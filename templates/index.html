@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="uk-container-expand uk-background-muted">
+    <div id="root"></div>
+</div>
+<!-- Your code here ! -->
+<script id="sensorData" type="application/json">
+    {{ context.sensor_data | tojson }}
+</script>
+<script src="{{ url_for('static', filename='react/index.js') }}"></script>
+
+{% endblock %}

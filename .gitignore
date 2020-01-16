@@ -1,0 +1,7 @@
+.cache
+.vscode
+node_modules
+venv
+__pycache__
+Description.docx
+frontend_task_description.txt
